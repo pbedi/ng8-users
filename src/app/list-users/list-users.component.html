@@ -1,0 +1,11 @@
+    <div class="row pt-3"  
+      *ngFor="let user of users"   
+      >  
+      <div class="col-md-1">{{ user.id }}</div> 
+      <div class="col">{{ user.first_name }}</div>
+      <div class="col">{{ user.last_name }}</div>
+      <div class="col">{{ user.email }}</div>
+      <div class="col"><img src="{{ user.avatar }}" alt=""> </div>
+      <div class="col"><button class="btn btn-danger" (click)="onDelete(user)">Delete</button> </div>
+</div>  
+ 
